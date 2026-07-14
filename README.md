@@ -5,8 +5,7 @@
 The project explores differences in prices, ratings, property types, occupancy rates, and Superhost performance through a Jupyter Notebook and an interactive Streamlit dashboard.
 
 ## 🌐 Live Demo
-
-[Explore the Airbnb Stay Explorer](https://airbnb-stay-explorer-tnbtn3kuynhyrxw2pylmt6.streamlit.app)
+(https://airbnb-stay-explorer-tnbtn3kuynhvrxw2pylmt6.streamlit.app/)
 
 ## 🎯 Project Goal
 
@@ -121,6 +120,3 @@ streamlit run app.py
 ## 👩🏻‍💻 Developed By
 
 **Sumaya Hassan Alsuhimi**
-
-Computer Science Graduate with First-Class Honors  
-Data Science and Artificial Intelligence Trainee
