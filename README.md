@@ -24,7 +24,7 @@ The project covers:
 
 ## 📊 Dataset
 
-The dataset includes Airbnb listings from:
+The project combines Airbnb listings from nine global destinations:
 
 - London
 - New York
@@ -36,10 +36,11 @@ The dataset includes Airbnb listings from:
 - Toronto
 - San Francisco
 
-After cleaning, the final dataset contains:
-
-- **145,797 listings**
-- **17 features**
+| Stage | Rows | Columns |
+|---|---:|---:|
+| After merging all city datasets | 145,825 | 17 |
+| After removing duplicate rows | 145,798 | 17 |
+| Final cleaned dataset | 145,797 | 17 |
 
 ## 🧹 Data Cleaning
 
