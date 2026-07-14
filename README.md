@@ -14,7 +14,7 @@ The main question explored in this project is:
 
 ## 🌐 Live Application
 
-### [Explore the Airbnb Stay Explorer Dashboard](https://airbnb-stay-explorer-tnbtn3kuynhyrxw2pylmt6.streamlit.app)
+### [Click here to explore the Airbnb Stay Explorer](https://airbnb-stay-explorer-tnbtn3kuynhyrxw2pylmt6.streamlit.app)
 
 ---
 
