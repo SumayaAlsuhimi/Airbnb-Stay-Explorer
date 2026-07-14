@@ -1,50 +1,31 @@
 # 🏡 Airbnb Stay Explorer
 
-## Global Airbnb Listings Exploration
+**Airbnb Stay Explorer** is an Exploratory Data Analysis project that analyzes Airbnb listings across nine global destinations.
 
-**Airbnb Stay Explorer** is an Exploratory Data Analysis project that examines Airbnb listings across nine major international destinations.
+The project explores differences in prices, ratings, property types, occupancy rates, and Superhost performance through a Jupyter Notebook and an interactive Streamlit dashboard.
 
-The project combines data cleaning, statistical exploration, visual analysis, and an interactive Streamlit dashboard to compare accommodation prices, guest ratings, property types, occupancy rates, and hosting characteristics across different cities.
+## 🌐 Live Demo
 
-The main question explored in this project is:
+[Explore the Airbnb Stay Explorer](https://airbnb-stay-explorer-tnbtn3kuynhyrxw2pylmt6.streamlit.app)
 
-> **What factors make Airbnb listings differ across global destinations, and does a higher price necessarily mean a better guest experience?**
+## 🎯 Project Goal
 
----
+The main question explored is:
 
-## 🌐 Live Application
+> **Does a higher Airbnb price necessarily mean a better guest experience?**
 
-### [Click here to explore the Airbnb Stay Explorer](https://airbnb-stay-explorer-tnbtn3kuynhyrxw2pylmt6.streamlit.app)
+The project covers:
 
----
-
-## 🎯 Project Objectives
-
-This project was completed as part of a Data Science and Artificial Intelligence bootcamp to practice the complete Exploratory Data Analysis workflow.
-
-The project focuses on:
-
-- Combining multiple real-world datasets
-- Inspecting and understanding the dataset structure
-- Cleaning and preparing the data
-- Handling missing and duplicated records
-- Detecting and investigating unusual values
-- Performing Exploratory Data Analysis
-- Creating visualizations to reveal patterns
-- Extracting meaningful business insights
-- Building an interactive Streamlit dashboard
-- Deploying the application online
-
----
+- Data cleaning and preprocessing
+- Exploratory Data Analysis
+- Outlier detection
+- Statistical summaries
+- Interactive visualizations
+- Streamlit dashboard development
 
 ## 📊 Dataset
 
-**Dataset:** Airbnb Data: Listings Scraped – Global Top Cities  
-**Source:** Kaggle
-
-The original dataset was divided into separate files for different destinations. These files were combined into one dataset to support comparison across cities.
-
-### Destinations Included
+The dataset includes Airbnb listings from:
 
 - London
 - New York
@@ -56,58 +37,90 @@ The original dataset was divided into separate files for different destinations.
 - Toronto
 - San Francisco
 
-### Dataset Size
+After cleaning, the final dataset contains:
 
-| Stage | Rows | Columns |
-|---|---:|---:|
-| After merging the city datasets | 145,825 | 17 |
-| After removing duplicates | 145,798 | 17 |
-| Final dataset after removing the unrealistic outlier | 145,797 | 17 |
+- **145,797 listings**
+- **17 features**
 
-### Main Features
+## 🧹 Data Cleaning
 
-The dataset includes:
+The cleaning process included:
 
-- Destination and city
-- Property type
-- Listing type
-- Number of bedrooms and bathrooms
-- Maximum number of guests
-- Number of reviews
-- Overall rating
-- Cleanliness rating
-- Location rating
-- Value rating
-- Superhost status
-- Latitude and longitude
-- Average daily rate
-- Occupancy rate
+- Merging nine city datasets
+- Removing 27 duplicate rows
+- Handling missing rating values using the median
+- Converting `Studio` bedrooms to `0`
+- Converting Superhost values to Boolean
+- Removing an unrealistic price outlier of `$33,553`
 
----
+## 🔍 Analysis
 
-## 🧹 Data Preparation
+The notebook analyzes:
 
-The datasets for the nine destinations were first loaded separately.
+- Average price by destination
+- Average rating by destination
+- Most common property types
+- Listing type distribution
+- Superhost vs regular host ratings
+- Price vs overall rating
+- Occupancy rate by destination
+- Correlation between numerical features
 
-A new `Destination` column was added to identify the source city of each listing. The same 17 relevant columns were then selected from every dataset before merging them into one DataFrame.
+## 💡 Key Findings
 
-The preparation workflow included:
+- Los Angeles has the highest average daily rate.
+- Tokyo has the lowest average price and the highest occupancy rate.
+- Higher prices do not necessarily lead to higher ratings.
+- Superhosts receive better average ratings than regular hosts.
+- Entire homes are the most common listing type.
+- Ratings are strongly related to cleanliness and value.
+
+## 💻 Dashboard Features
+
+- Destination filters
+- Price and guest filters
+- Property type exploration
+- Interactive charts
+- Geographical maps
+- Listing recommendations
+- Analytical insights
+
+## 📁 Repository Structure
 
 ```text
-Nine City Datasets
-        ↓
-Add Destination Labels
-        ↓
-Select Common Columns
-        ↓
-Merge All Datasets
-        ↓
-Inspect Structure and Data Quality
-        ↓
-Clean Missing and Duplicate Values
-        ↓
-Investigate Price Outliers
-        ↓
-Create the Final Clean Dataset
-        ↓
-Build the Streamlit Dashboard
+Airbnb-Stay-Explorer/
+│
+├── app.py
+├── Airbnb_Cleaned_Final.csv
+├── EDA_Project (1).ipynb
+├── requirements.txt
+└── README.md
+```
+
+## 🛠️ Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Streamlit
+- Jupyter Notebook
+- GitHub
+
+## ▶️ Run the Project
+
+```bash
+git clone https://github.com/SumayaAlsuhimi/Airbnb-Stay-Explorer.git
+cd Airbnb-Stay-Explorer
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 👩🏻‍💻 Developed By
+
+**Sumaya Hassan Alsuhimi**
+
+Computer Science Graduate with First-Class Honors  
+Data Science and Artificial Intelligence Trainee
