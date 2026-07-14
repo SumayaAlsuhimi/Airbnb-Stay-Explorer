@@ -4,7 +4,7 @@ An interactive Exploratory Data Analysis dashboard that allows users to explore 
 
 ## 🚀 Live Application
 
-### [Click here to explore the Airbnb Stay Explorer](https://airbnb-stay-explorer-tnbtn3kuynhyrxw2pylmt6.streamlit.app)
+### [Click here to explore the Airbnb Stay Explorer](https://airbnb-stay-explorer-tnbtn3kuynhvrxw2pylmt6.streamlit.app/))
 
 ---
 
